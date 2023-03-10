@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0%;
+        padding: 0%;
+      }
+      body {
+        font-size: x-large;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+      .container {
+        background-color: bisque;
+        padding: 5%;
+      }
+      .about_line {
+        height: 150%;
+        width: 100%;
+      }
+      h1 {
+        text-align: center;
+        font-weight: bolder;
+      }
+      button {
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-12">
+          <!-- this is a name -->
+          <h1>FORM</h1>
+          <form>
+            <div id="name">
+              <label for="Name">Name</label><br />
+              <input type="text" class="about_line" /><br />
+            </div>
+            <!-- this is a email -->
+            <label for="email">Email</label><br />
+            <input type="email" class="about_line" /><br />
+            <!-- this is a phone number -->
+            <label for="phone number">Phone number</label><br />
+            <input type="number" class="about_line" /><br />
+            <!-- this is a birth date -->
+            <label for="birth date">Birth Date</label><br />
+            <input type="date" class="about_line" /><br />
+            <!-- this is a Appointment time -->
+            <label for="Appointment time ">Appointment time </label><br />
+            <input type="time" class="about_line" /><br />
+            <!-- this is a drope down for colore -->
+            <label for="color">Favorite color</label><br />
+            <select class="about_line">
+              <option value="RED">RED</option>
+              <option value="GREEN">GREEN</option>
+              <option value="BLUE">BLUE</option>
+              <option value="YWLLOW">YELLOW</option>
+            </select>
+            <br />
+            <!-- this is a payment -->
+            <label for="Payment method">Payment method</label><br />
+            <input type="radio" /> ATM<br />
+            <input type="radio" /> UPI<br />
+            <input type="radio" /> NET BANKING<br />
+            <input type="radio" /> CASE<br />
+
+            <label for="Age">Age</label><br />
+            <input type="range" class="about_line" /><br />
+
+            <!-- this is a checkbox -->
+            <label for="Checkbox options">condition</label>
+            <input type="checkbox" /><br />
+
+            <label for="Upload photo">Upload photo</label><br />
+            <input type="file" /><br /><br />
+
+            <button type="button" class="btn btn-dark">submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
